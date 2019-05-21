@@ -23,3 +23,6 @@ cd build
 ../configure --prefix=/usr --sysconfdir=/etc
 make
 sudo make install
+
+# Some stuff to install; will add to the list later
+sudo apt install vim lxappearance

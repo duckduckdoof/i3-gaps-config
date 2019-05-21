@@ -25,4 +25,9 @@ make
 sudo make install
 
 # Some stuff to install; will add to the list later
-sudo apt install vim lxappearance
+sudo apt install vim lxappearance x11-utils
+
+# Install fonts (make sure to make the .fonts directory first)
+mkdir ~/.fonts
+git clone https://github.com/stark/siji && cd siji
+./install.sh -d ~/.fonts

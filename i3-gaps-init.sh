@@ -52,3 +52,6 @@ sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev 
 # Get polybar & install
 git clone https://github.com/jaagr/polybar.git
 cd polybar && ./build.sh
+
+# Install pywal
+pip install pywal

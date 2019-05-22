@@ -33,12 +33,18 @@ cd build
 make
 sudo make install
 
+
+## NOTE: FONTS
+# Make sure to install more fonts via "Nerd fonts", then extract the ttfs
+# to the .fonts directory on your machine
+
 # Install fonts (make sure to make the .fonts directory first)
 mkdir ~/.fonts
 git clone https://github.com/stark/siji && cd siji
 ./install.sh -d ~/.fonts
 
 sudo apt install fonts-font-awesome
+fc-cache -f -v
 
 # Install polybar (dependencies)
 sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2

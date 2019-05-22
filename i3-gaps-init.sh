@@ -1,5 +1,5 @@
 # First, install dependencies for i3-gaps
-sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool 
+sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool git
 
 # Need to install the libxcb-xrm-dev library
 mkdir tmp
@@ -25,7 +25,7 @@ make
 sudo make install
 
 # Some stuff to install; will add to the list later
-sudo apt install vim lxappearance x11-utils
+sudo apt install vim lxappearance x11-utils tree rofi compton
 
 # Install fonts (make sure to make the .fonts directory first)
 mkdir ~/.fonts

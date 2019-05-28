@@ -55,3 +55,6 @@ cd polybar && ./build.sh
 
 # Install pywal
 pip install pywal
+
+# Install spotify
+sudo snap install spotify

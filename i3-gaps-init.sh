@@ -58,3 +58,6 @@ pip install pywal
 
 # Install spotify
 sudo snap install spotify
+
+# Install themes
+sudo apt install numix-icon-theme

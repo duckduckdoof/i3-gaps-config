@@ -1,0 +1,6 @@
+2019/05/29-17:24:39.184 8ef Reusing MANIFEST Session Storage/MANIFEST-000001
+2019/05/29-17:24:39.184 8ef Recovering log #16
+2019/05/29-17:24:39.187 8ef Reusing old log Session Storage/000016.log 
+2019/05/29-17:32:05.522 c4f Level-0 table #20: started
+2019/05/29-17:32:05.541 c4f Level-0 table #20: 21898 bytes OK
+2019/05/29-17:32:05.551 c4f Delete type=0 #16

@@ -1,0 +1,69 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    102
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintfull
+Xft.lcdfilter:		    lcddefault
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+!-------------------------------------------------------------------------------
+
+! URxvt.depth:                32
+URxvt.geometry:             50x12
+URxvt*transparent:          true
+URxvt*shading:		    20
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            999
+URxvt.internalBorder:       20
+URxvt.lineSpace:            0
+
+! Fonts
+URxvt.allow_bold:           true
+URxvt*font:		    xft:RobotoMono Nerd Font:style=Regular:pixelsize=15
+URxvt*boldFont:		    xft:RobotoMono Nerd Font:style=Bold:pixelsize=20 
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          google-chrome-stable
+
+! Cursor
+URxvt.cursorBlink:          false
+! URxvt.cursorColor:          #2bb9b8
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         false
+
+!-------------------------------------------------------------------------------
+! Rofi Settings
+!-------------------------------------------------------------------------------
+rofi.color-enabled:		true
+rofi.separator-style:		solid
+rofi.bw:			2
+rofi.columns:			1
+rofi.yoffset:			0
+rofi.fake-transparency:		false
+rofi.hide-scrollbar:		true
+!rofi.opacity:			90
+
+rofi.location:			0
+rofi.width:			30
+rofi.lines:			10
+rofi.fixed-num-lines:		true
+

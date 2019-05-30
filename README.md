@@ -1,5 +1,5 @@
 # i3-gaps-config
-This repository contains a shell scripts for configuring my i3-gaps desktop
+This repository contains a shell script for configuring my i3-gaps desktop
 
 ## Usage
 1) Clone the repository

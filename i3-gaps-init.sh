@@ -1,11 +1,13 @@
 # Python version --> get it to version 3
-sudo apt install python3 python3-pip
-touch .bash_aliases
-echo "alias python=python3" > .bash_aliases
-echo "alias pip=pip3" >> .bash_aliases
+sudo apt install python-pip python3 python3-pip
+touch ~/.bash_aliases
+echo "alias python=python3" > ~/.bash_aliases
+echo "alias pip=pip3" >> ~/.bash_aliases
+
+source ~/.bashrc
 
 # Some stuff to install; will add to the list later
-sudo apt install vim lxappearance x11-utils tree rofi compton git scrot feh ranger dunst mpd mpc neofetch
+sudo apt install vim lxappearance x11-utils tree rofi compton git scrot feh ranger dunst mpd mpc neofetch neovim subversion
 
 # i3-gaps dependencies
 sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool
@@ -33,17 +35,31 @@ cd build
 make
 sudo make install
 
-
-## NOTE: FONTS
-# Make sure to install more fonts via "Nerd fonts", then extract the ttfs
-# to the .fonts directory on your machine
-
 # Install fonts (make sure to make the .fonts directory first)
+# Siji
 mkdir ~/.fonts
 git clone https://github.com/stark/siji && cd siji
 ./install.sh -d ~/.fonts
 
+# FontAwesome (might still need to download from site)
 sudo apt install fonts-font-awesome
+
+# RobotoMono
+svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/RobotoMono/Regular/complete RobotoMono
+cp RobotoMono/* ~/.fonts/
+
+# Iosevka
+svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/Iosevka/Regular/complete Iosevka
+cp Iosevka/* ~/.fonts/
+
+# DejaVu Sans Mono
+svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/DejaVuSansMono/Regular/complete DejaVuSansMono
+cp DejaVuSansMono/* ~/.fonts/
+
+# Glyphs
+svn export https://github.com/ryanoasis/nerd-fonts/trunk/src/glyphs glyphs
+cp glyphs/* ~/.fonts/
+
 fc-cache -f -v
 
 # Install polybar (dependencies)
@@ -64,3 +80,9 @@ sudo apt install numix-icon-theme
 
 # Install blurwal
 pip install blurwal
+
+# Move the directories with config files into proper place
+cp -r .config/* ~/.config
+cp .Xdefaults ~/.Xdefaults
+cp .xinitrc ~/.xinitrc
+cp -r wallpapers/* ~/Pictures/wallpapers

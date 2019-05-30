@@ -1,2 +1,7 @@
 # i3-gaps-config
-dotfiles and config scripts for my i3-gaps Ubuntu setup
+This repository contains a shell script for configuring my i3-gaps desktop
+
+## Usage
+1) Clone the repository
+2) In the `i3-gaps-config` directory, make the script `i3-gaps-init.sh` executable
+3) Run the script!

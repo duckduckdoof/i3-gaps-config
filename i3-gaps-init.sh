@@ -16,7 +16,7 @@ sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0
 
 # Need to install the libxcb-xrm-dev library
 cd /tmp
-git clone https://github.com/Airblader/xcb-util-xrm
+git clone https://www.github.com/Airblader/xcb-util-xrm
 cd xcb-util-xrm
 git submodule update --init
 ./autogen.sh --prefix=/usr
@@ -25,7 +25,7 @@ sudo make install
 
 # Install from source
 cd /tmp
-git clone https://github.com/Airblader/i3 i3-gaps
+git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 autoreconf --force --install
 rm -rf build
@@ -38,26 +38,26 @@ sudo make install
 # Install fonts (make sure to make the .fonts directory first)
 # Siji
 mkdir ~/.fonts
-git clone https://github.com/stark/siji && cd siji
+git clone https://www.github.com/stark/siji && cd siji
 ./install.sh -d ~/.fonts
 
 # FontAwesome (might still need to download from site)
 sudo apt install fonts-font-awesome
 
 # RobotoMono
-svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/RobotoMono/Regular/complete RobotoMono
+svn export https://www.github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/RobotoMono/Regular/complete RobotoMono
 cp RobotoMono/* ~/.fonts/
 
 # Iosevka
-svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/Iosevka/Regular/complete Iosevka
+svn export https://www.github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/Iosevka/Regular/complete Iosevka
 cp Iosevka/* ~/.fonts/
 
 # DejaVu Sans Mono
-svn export https://github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/DejaVuSansMono/Regular/complete DejaVuSansMono
+svn export https://www.github.com/ryanoasis/nerd-fonts/trunk/patched-fonts/DejaVuSansMono/Regular/complete DejaVuSansMono
 cp DejaVuSansMono/* ~/.fonts/
 
 # Glyphs
-svn export https://github.com/ryanoasis/nerd-fonts/trunk/src/glyphs glyphs
+svn export https://www.github.com/ryanoasis/nerd-fonts/trunk/src/glyphs glyphs
 cp glyphs/* ~/.fonts/
 
 fc-cache -f -v
@@ -66,7 +66,7 @@ fc-cache -f -v
 sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2
 
 # Get polybar & install
-git clone https://github.com/jaagr/polybar.git
+git clone https://www.github.com/jaagr/polybar.git
 cd polybar && ./build.sh
 
 # Install pywal

@@ -83,7 +83,9 @@ pip3 install blurwal
 
 # Move the directories with config files into proper place
 mkdir ~/Pictures/wallpapers
+mkdir ~/.scripts
 cp -r ~/i3-gaps-config/.config/* ~/.config
 cp ~/i3-gaps-config/.Xdefaults ~/.Xdefaults
 cp ~/i3-gaps-config/.xinitrc ~/.xinitrc
 cp -r ~/i3-gaps-config/wallpapers/* ~/Pictures/wallpapers
+cp -r ~/i3-gaps-config/.scripts/* ~/.scripts

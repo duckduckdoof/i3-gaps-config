@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Python version --> get it to version 3
 sudo apt install python-pip python3 python3-pip
 touch ~/.bash_aliases
@@ -70,7 +72,7 @@ git clone https://github.com/jaagr/polybar.git
 cd polybar && ./build.sh
 
 # Install pywal
-pip install pywal
+pip3 install pywal
 
 # Install spotify
 sudo snap install spotify
@@ -79,10 +81,11 @@ sudo snap install spotify
 sudo apt install numix-icon-theme
 
 # Install blurwal
-pip install blurwal
+pip3 install blurwal
 
 # Move the directories with config files into proper place
-cp -r .config/* ~/.config
-cp .Xdefaults ~/.Xdefaults
-cp .xinitrc ~/.xinitrc
-cp -r wallpapers/* ~/Pictures/wallpapers
+mkdir ~/Pictures/wallpapers
+cp -r ~/i3-gaps-config/.config/* ~/.config
+cp ~/i3-gaps-config/.Xdefaults ~/.Xdefaults
+cp ~/i3-gaps-config/.xinitrc ~/.xinitrc
+cp -r ~/i3-gaps-config/wallpapers/* ~/Pictures/wallpapers

@@ -90,7 +90,12 @@ cp ~/i3-gaps-config/.xinitrc ~/.xinitrc
 cp -r ~/i3-gaps-config/wallpapers/* ~/Pictures/wallpapers
 cp -r ~/i3-gaps-config/.scripts/* ~/.scripts
 
+# Make the scripts executable
 chmod +x ~/.scripts/rofi.sh
 chmod +x ~/.scripts/dunst_init.sh
 chmod +x ~/.scripts/wal_init.sh
 chmod +x ~/.scripts/polybar.sh
+
+# Install google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd54.deb

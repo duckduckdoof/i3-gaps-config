@@ -77,6 +77,7 @@ sudo snap install spotify
 
 # Install themes
 sudo apt install numix-icon-theme
+sudo apt install numix-gtk-theme
 
 # Install blurwal
 pip3 install blurwal
